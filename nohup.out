@@ -1,0 +1,101 @@
+Traceback (most recent call last):
+  File "/opt/anaconda2/bin/jupyter-notebook", line 6, in <module>
+    sys.exit(notebook.notebookapp.main())
+  File "/opt/anaconda2/lib/python2.7/site-packages/jupyter_core/application.py", line 267, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/opt/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 657, in launch_instance
+    app.initialize(argv)
+  File "<decorator-gen-7>", line 2, in initialize
+  File "/opt/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 87, in catch_config_error
+    return method(app, *args, **kwargs)
+  File "/opt/anaconda2/lib/python2.7/site-packages/notebook/notebookapp.py", line 1142, in initialize
+    self.init_webapp()
+  File "/opt/anaconda2/lib/python2.7/site-packages/notebook/notebookapp.py", line 956, in init_webapp
+    self.jinja_environment_options
+  File "/opt/anaconda2/lib/python2.7/site-packages/notebook/notebookapp.py", line 135, in __init__
+    default_url, settings_overrides, jinja_env_options)
+  File "/opt/anaconda2/lib/python2.7/site-packages/notebook/notebookapp.py", line 207, in init_settings
+    nbextensions_path=ipython_app.nbextensions_path,
+  File "/opt/anaconda2/lib/python2.7/site-packages/notebook/notebookapp.py", line 698, in nbextensions_path
+    from IPython.paths import get_ipython_dir
+  File "/opt/anaconda2/lib/python2.7/site-packages/IPython/__init__.py", line 49, in <module>
+    from .terminal.embed import embed
+  File "/opt/anaconda2/lib/python2.7/site-packages/IPython/terminal/embed.py", line 17, in <module>
+    from IPython.terminal.interactiveshell import TerminalInteractiveShell
+  File "/opt/anaconda2/lib/python2.7/site-packages/IPython/terminal/interactiveshell.py", line 16, in <module>
+    from prompt_toolkit.enums import DEFAULT_BUFFER, EditingMode
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/__init__.py", line 16, in <module>
+    from .interface import CommandLineInterface
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/interface.py", line 19, in <module>
+    from .application import Application, AbortAction
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/application.py", line 8, in <module>
+    from .key_binding.bindings.basic import load_basic_bindings
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/key_binding/bindings/basic.py", line 7, in <module>
+    from prompt_toolkit.layout.screen import Point
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/layout/__init__.py", line 50, in <module>
+    from .containers import Float, FloatContainer, HSplit, VSplit, Window, ConditionalContainer
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/layout/containers.py", line 11, in <module>
+    from .controls import UIControl, TokenListControl, UIContent
+  File "/opt/anaconda2/lib/python2.7/site-packages/prompt_toolkit/layout/controls.py", line 416, in <module>
+    _ProcessedLine = namedtuple('_ProcessedLine', 'tokens source_to_display display_to_source')
+  File "/opt/anaconda2/lib/python2.7/collections.py", line 386, in namedtuple
+    exec class_definition in namespace
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
+[I 20:23:43.287 NotebookApp] Serving notebooks from local directory: /home/raku/kaggle/quora
+[I 20:23:43.287 NotebookApp] 0 active kernels 
+[I 20:23:43.287 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
+[I 20:23:43.288 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 20:23:46.179 NotebookApp] 404 GET /api/kernels/ec5e689a-581e-4c61-a253-f28eba273099/channels?session_id=233671D173384B55B8A4B04806565425 (61.219.127.188): Kernel does not exist: ec5e689a-581e-4c61-a253-f28eba273099
+[W 20:23:46.253 NotebookApp] 404 GET /api/kernels/ec5e689a-581e-4c61-a253-f28eba273099/channels?session_id=233671D173384B55B8A4B04806565425 (61.219.127.188) 113.68ms referer=None
+[W 20:23:47.045 NotebookApp] 404 GET /api/kernels/f1be8dab-a0c5-418a-a51e-d1a26cd3c9b9/channels?session_id=156E4957DFE4458E90CA398C7ADC429D (61.219.127.188): Kernel does not exist: f1be8dab-a0c5-418a-a51e-d1a26cd3c9b9
+[W 20:23:47.047 NotebookApp] 404 GET /api/kernels/f1be8dab-a0c5-418a-a51e-d1a26cd3c9b9/channels?session_id=156E4957DFE4458E90CA398C7ADC429D (61.219.127.188) 7.16ms referer=None
+[W 20:23:51.655 NotebookApp] Replacing stale connection: ec5e689a-581e-4c61-a253-f28eba273099:233671D173384B55B8A4B04806565425
+[W 20:23:52.366 NotebookApp] Replacing stale connection: f1be8dab-a0c5-418a-a51e-d1a26cd3c9b9:156E4957DFE4458E90CA398C7ADC429D
+[I 20:24:35.841 NotebookApp] Kernel started: 704821cc-2705-4f1e-bac6-aa42fa9ab8ed
+[W 20:26:03.610 NotebookApp] Replacing stale connection: ec5e689a-581e-4c61-a253-f28eba273099:233671D173384B55B8A4B04806565425
+[I 20:26:51.462 NotebookApp] Kernel interrupted: 704821cc-2705-4f1e-bac6-aa42fa9ab8ed
+[I 20:26:51.763 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:29:53.364 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:32:56.040 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:13.517 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:41.604 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:42.352 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:44.351 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:47.604 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:47.709 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:48.966 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:51.134 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 20:35:51.912 NotebookApp] Kernel shutdown: 704821cc-2705-4f1e-bac6-aa42fa9ab8ed
+[I 20:35:52.056 NotebookApp] Saving file at /Sampling the train set.ipynb
+[I 21:13:02.732 NotebookApp] Kernel started: 70897029-5334-4c9e-a414-d0ebb69bb028
+[W 21:14:59.633 NotebookApp] SSL Error on 9 ('49.4.143.90', 1673): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[I 02:44:22.534 NotebookApp] 302 GET / (31.204.128.83) 0.97ms
+[W 10:15:33.159 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20170430202342 (61.219.127.188) 26.54ms referer=https://222.73.22.59:8888/notebooks/Sampling%20the%20train%20set.ipynb
+[W 10:39:49.065 NotebookApp] SSL Error on 9 ('139.162.81.62', 54076): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:15.876 NotebookApp] SSL Error on 9 ('80.82.78.38', 50345): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:17.704 NotebookApp] SSL Error on 9 ('80.82.78.38', 49940): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:17.913 NotebookApp] SSL Error on 9 ('80.82.78.38', 51095): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:24.913 NotebookApp] SSL Error on 9 ('80.82.78.38', 52491): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:30.748 NotebookApp] SSL Error on 9 ('80.82.78.38', 55074): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 11:52:45.711 NotebookApp] SSL Error on 9 ('80.82.78.38', 60577): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 16:45:47.878 NotebookApp] SSL Error on 9 ('123.151.42.61', 54194): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 18:24:42.691 NotebookApp] SSL Error on 9 ('91.196.50.33', 59972): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:20.883 NotebookApp] SSL Error on 9 ('93.174.93.136', 55834): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:21.873 NotebookApp] SSL Error on 9 ('93.174.93.136', 56184): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:23.885 NotebookApp] SSL Error on 9 ('93.174.93.136', 56828): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:27.714 NotebookApp] SSL Error on 9 ('93.174.93.136', 58109): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:35.872 NotebookApp] SSL Error on 9 ('93.174.93.136', 60781): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 19:43:52.640 NotebookApp] SSL Error on 9 ('93.174.93.136', 37797): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 21:24:18.841 NotebookApp] SSL Error on 9 ('163.172.173.62', 34730): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 02:45:22.362 NotebookApp] SSL Error on 9 ('59.46.181.116', 52542): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 09:29:12.899 NotebookApp] SSL Error on 9 ('139.162.81.62', 53100): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:17:36.820 NotebookApp] SSL Error on 9 ('80.82.78.38', 42980): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:17:37.836 NotebookApp] SSL Error on 9 ('80.82.78.38', 43295): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:17:40.182 NotebookApp] SSL Error on 9 ('80.82.78.38', 44163): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:17:44.134 NotebookApp] SSL Error on 9 ('80.82.78.38', 45472): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:17:52.939 NotebookApp] SSL Error on 9 ('80.82.78.38', 48542): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[W 10:18:08.132 NotebookApp] SSL Error on 9 ('80.82.78.38', 54578): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:661)
+[C 10:41:33.359 NotebookApp] received signal 15, stopping
+[I 10:41:33.363 NotebookApp] Shutting down kernels
+[I 10:41:33.467 NotebookApp] Kernel shutdown: 70897029-5334-4c9e-a414-d0ebb69bb028
